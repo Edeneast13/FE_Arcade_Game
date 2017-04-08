@@ -32,17 +32,17 @@ var Player = function(x, y, speed){
 };
 
 Player.prototype.update =  function(){
-    if(player.x <= 0){
-        player.x = 0;
+    if(this.x <= 0){
+        this.x = 0;
     }
-    if(player.x >= 400){
-        player.x = 400;
+    if(this.x >= 400){
+        this.x = 400;
     }
-    if(player.y >= 400){
-        player.y = 400;
+    if(this.y >= 400){
+        this.y = 400;
     }
-    if(player.y <= -20){
-        player.y = 400;
+    if(this.y <= -20){
+        this.y = 400;
     }
 };
 

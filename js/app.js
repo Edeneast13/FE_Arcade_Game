@@ -1,3 +1,5 @@
+'use strict'
+
 var Enemy = function(x, y, speed) {
     this.x = x;
     this.y = y;
@@ -53,19 +55,19 @@ Player.prototype.render = function(){
 Player.prototype.handleInput = function(keyPress){
     switch(keyPress){
         case 'left':
-            player.x -= player.speed -10;
+            this.x -= this.speed -10;
             break;
         
         case 'right':
-            player.x += player.speed - 10;
+            this.x += this.speed - 10;
             break;
         
         case 'up':
-            player.y -= player.speed - 25;
+            this.y -= this.speed - 25;
             break;
         
         case 'down':
-            player.y += player.speed - 25;
+            this.y += this.speed - 25;
             break;
     }
 };  
